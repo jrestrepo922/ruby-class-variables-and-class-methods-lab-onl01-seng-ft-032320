@@ -30,17 +30,18 @@ class Song
   end 
   
   def self.genre_count
-    hash_histogram = {}
+    hash_histogram_genre = {}
     @@genres.each { |genre|
-      if hash_histogram.keys.include?(genre)
-        hash_histogram[genre] += 1 
+      if hash_histogram_genre.keys.include?(genre)
+        hash_histogram_genre[genre] += 1 
       else 
-        hash_histogram[genre] = 1 
+        hash_histogram_genre[genre] = 1 
       end 
     }
-    hash_histogram
+    hash_histogram_genre
   end 
   
-  
+  def self.artist_count
+    
 end 
 
